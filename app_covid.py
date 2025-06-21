@@ -3,7 +3,7 @@ import pickle
 import numpy as np
 
 # Cargar modelo
-with open('bestmodel.pkl', 'rb') as f:
+with open('best_model.pkl', 'rb') as f:
     model = pickle.load(f)
 
 st.set_page_config(page_title="Predicción de Mortalidad por COVID-19")
