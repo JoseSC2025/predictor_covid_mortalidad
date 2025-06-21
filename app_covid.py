@@ -2,6 +2,9 @@ import streamlit as st
 import joblib
 import numpy as np
 
+# URL directa al archivo .pkl en GitHub (usa el enlace RAW)
+MODEL_URL = "https://github.com/JoseSC2025/predictor_covid_mortalidad/blob/main/best_model.pkl" 
+
 # Cargar modelo
 with open('best_model.pkl', 'rb') as f:
     model = joblib.load(f)
