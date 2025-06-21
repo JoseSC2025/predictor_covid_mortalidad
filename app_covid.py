@@ -1,10 +1,10 @@
 import streamlit as st
-import pickle
+import joblib
 import numpy as np
 
 # Cargar modelo
 with open('best_model.pkl', 'rb') as f:
-    model = pickle.load(f)
+    model = joblib.load(f)
 
 st.set_page_config(page_title="Predicción de Mortalidad por COVID-19")
 
