@@ -17,19 +17,21 @@ st.markdown("Ingrese los datos del paciente para predecir el riesgo de mortalida
 # Variables del modelo (modifica según tu modelo real)
 # Ejemplo de variables binarias:
 dicotomicas = {
-    "Fiebre": None,
-    "Tos": None,
-    "Dificultad respiratoria": None,
-    "Diabetes": None,
-    "Hipertensión": None,
-    "Obesidad": None
+    "fiebre_Si": None,
+    "malestar_gen_Si": None,
+    "tos_Si": None,
+    "dolor_garganta_Si": None,
+    "congestion_nasal_Si": None,
+    "dificultad_resp_Si": None,
+    "diarrea_Si": None,
+    "vomitos_Si": None,	
 }
 
 # Ingreso de datos
 input_data = []
 
 # Edad
-edad = st.slider("Edad", 0, 150, 30)
+edad = st.slider("Edad", 0, 120, 20)
 input_data.append(edad)
 
 # Sexo
